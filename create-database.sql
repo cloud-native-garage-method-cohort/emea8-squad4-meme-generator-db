@@ -32,5 +32,15 @@ INSERT INTO Images VALUES (
 );
 GO
 
+INSERT INTO Images VALUES (
+   '61579',
+   'One Does Not Simply',
+   'https://i.imgflip.com/1bij.jpg',
+   568,
+   335,
+   2
+);
+GO
+
 SELECT * FROM Images
 GO
