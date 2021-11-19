@@ -6,9 +6,9 @@ spec:
   serviceAccountName: webhook-receiver
   triggers:
     - template:
-        name: webhook-receiver
+        name: webhook-receiver-db
       bindings:
-        - ref: webhook-receiver
+        - ref: webhook-receiver-db
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
