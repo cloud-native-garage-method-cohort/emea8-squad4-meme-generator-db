@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: squad4-meme-generator-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app.kubernetes.io/instance: squad4-meme-generator-db
+      app.kubernetes.io/name: squad4-meme-generator-db
+  template: 
+    metadata:
+      labels:
+        app.kubernetes.io/instance: squad4-meme-generator-db
+        app.kubernetes.io/name: squad4-meme-generator-db
+    spec:
+      containers:
+      - name: squad4-meme-generator-db
+        image: quay.io/levandrejev/squad4-meme-generator-db:<TODO>
+        env:
+        - name: ACCEPT_EULA
+          valueFrom:
+            configMapKeyRef:
+              name: db-configmap
+              key: ACCEPT_EULA
+        - name: SA_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: password

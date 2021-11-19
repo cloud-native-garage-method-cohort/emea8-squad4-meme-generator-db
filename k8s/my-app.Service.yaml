@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: squad4-meme-generator-db-svc
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/instance: squad4-meme-generator-db
+    app.kubernetes.io/name: squad4-meme-generator-db
+  ports:
+  - protocol: TCP
+    port: 1433
+    targetPort: 1433
+  sessionAffinity: None
