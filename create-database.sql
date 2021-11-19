@@ -15,7 +15,7 @@ GO
 INSERT INTO Images VALUES (
    '181913649',
    'Drake Hotline Bling',
-   'https:\/\/i.imgflip.com\/30b1gx.jpg',
+   'https://i.imgflip.com/30b1gx.jpg',
    1200,
    1200,
    2
@@ -25,7 +25,7 @@ GO
 INSERT INTO Images VALUES (
    '87743020',
    'Two Buttons',
-   'https:\/\/i.imgflip.com\/1g8my4.jpg',
+   'https://i.imgflip.com/1g8my4.jpg',
    600,
    908,
    3
@@ -35,7 +35,7 @@ GO
 INSERT INTO Images VALUES (
    '61579',
    'One Does Not Simply',
-   'https:\/\/i.imgflip.com\/1bij.jpg',
+   'https://i.imgflip.com/1bij.jpg',
    568,
    335,
    2
