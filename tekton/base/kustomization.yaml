@@ -8,7 +8,7 @@ resources:
 - build.pipeline.yaml
 - quay.Secret.yaml
 - webhook-receiver.EventListener.yaml
-- save-configuration.Task.yaml
+- save-configuration-db.Task.yaml
 - git-credentials.Secret.yaml
 - production-repository.ConfigMap.yaml
 - db.ConfigMap.yaml
