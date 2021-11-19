@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: squad4-meme-generator-db
-        image: quay.io/levandrejev/squad4-meme-generator-db:<TODO>
+        image: quay.io/levandrejev/squad4-meme-generator-db:4a6a1688414546b2fb0c8e5ef0573ea39d7e8932
         env:
         - name: ACCEPT_EULA
           valueFrom:

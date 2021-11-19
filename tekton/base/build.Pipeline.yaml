@@ -76,7 +76,7 @@ spec:
       workspaces:
         - name: source
           workspace: pipeline-shared-data
-    - name: save-configuration
+    - name: save-configuration-db
       params:
         - name: manifest
           value: "$(tasks.create-configuration.results.manifest)"
@@ -87,7 +87,7 @@ spec:
       runAfter:
         - deploy
       taskRef:
-        name: save-configuration
+        name: save-configuration-db
       workspaces:
         - name: source
           workspace: pipeline-shared-data

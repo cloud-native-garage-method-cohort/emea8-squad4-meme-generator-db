@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: save-configuration
+  name: save-configuration-db
 spec:
   params:
     - name: manifest
@@ -24,28 +24,28 @@ spec:
         - name: GIT_PROTOCOL
           valueFrom:
             configMapKeyRef:
-              name: production-repository
+              name: production-repository-db
               key: protocol
               optional: true
         - name: GIT_HOST
           valueFrom:
             configMapKeyRef:
-              name: production-repository
+              name: production-repository-db
               key: host
         - name: GIT_ORG
           valueFrom:
             configMapKeyRef:
-              name: production-repository
+              name: production-repository-db
               key: org
         - name: GIT_REPO
           valueFrom:
             configMapKeyRef:
-              name: production-repository
+              name: production-repository-db
               key: repo
         - name: GIT_BRANCH
           valueFrom:
             configMapKeyRef:
-              name: production-repository
+              name: production-repository-db
               key: branch
               optional: true
       script: |
