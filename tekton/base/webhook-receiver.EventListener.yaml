@@ -62,7 +62,7 @@ spec:
   port:
     targetPort: 8080
   to:
-    name: el-webhook-receiver
+    name: el-webhook-receiver-db
     kind: Service
     weight: 100
 ---
