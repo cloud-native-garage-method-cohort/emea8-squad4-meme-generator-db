@@ -12,7 +12,7 @@ spec:
     - name: app-name
       value: squad4-meme-generator-db
   pipelineRef:
-    name: build-pipeline
+    name: build-pipeline-db
   workspaces:
     - name: pipeline-shared-data
       volumeClaimTemplate:
